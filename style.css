@@ -1,0 +1,159 @@
+.img-logo {
+  height: 50px;
+  width: 50px;
+}
+
+/* This is for medium screens and bigger */
+@media(min-width:768px) {
+  .bg-img {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/18/15/01/piano-1835179__340.jpg");
+    opacity: 0.90;
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* max-width: 100%; */
+    background-position: 0px;
+
+  }
+
+
+
+  .spill {
+    transform: translateY(90px);
+  }
+
+}
+
+
+/* This is for medium screens and smaller */
+@media (max-width: 768px) {
+
+  /* .text-form {
+    color: black;
+  } */
+  .bg-img {
+    background-image: url("https://www.musicnotes.com/images2/promos/store/900x520_piano-min.jpg");
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* max-width: 100%; */
+    background-position: 0px;
+
+
+  }
+
+  .card-size {
+    height: 100px;
+    width: 100px;
+  }
+
+
+
+}
+
+
+.container-color {
+  background-color: rgb(0, 0, 0);
+  /* height: 5% !important; */
+}
+
+.icon-size {
+  font-size: large;
+}
+
+.progress {
+  height: 4VH !important;
+}
+
+.footer-size {
+  height: 20vh !important;
+}
+
+
+.center-words {
+  display: flex;
+  align-items: center;
+}
+
+.bg-progress {
+  background-color: #0c0c1e;
+}
+
+.click-btn {
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+  position: absolute;
+  transform: translatex(700%);
+
+}
+
+.gold-steez {
+  color: #F3E3E2;
+
+}
+
+.container-vfx {
+  border-radius: 15%;
+  background-color: #1b2e3c;
+  height: 575px;
+  width: 350px;
+}
+
+.submit-btn {
+  color: white;
+  background-color: black;
+
+}
+
+.da-font {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.color-1 {
+  background-color: #1b2e3c;
+}
+
+.color-2 {
+  background-color: #0c0c1e;
+}
+
+.color-3 {
+  background-color: #4B0000;
+}
+
+.color-4 {
+  background-color: #F3E3E2;
+}
+
+.learn-steez {
+  color: #4B0000;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: #dc1a1a;
+}
+
+.card-color {
+  background-color: #F3E3E2;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.buttons {
+  color: black;
+  background-color: #000000;
+  text-decoration: none;
+  height: 1.2em;
+  padding: 3px 6px;
+  margin: 10px 0px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.buttons:hover {
+  background-color: #5d0505;
+  text-decoration: dotted;
+}

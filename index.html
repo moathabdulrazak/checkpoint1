@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>checkpoint1</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class=" container-fluid">
+
+
+  <header class="row color-3 sticky-top">
+    <div class="col-md-12">
+      <h1 class=" text-light p-3 da-font">STEEZ KEYS</h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION background img, contact form and steez -->
+
+    <section class="row bg-img ">
+
+      <div id="steez" class="col-md-4 text-form p-5 mb-5 card shadow container-fluid mt-4 container-vfx text-light">
+        <div class="">
+          <div class="">
+            <h1 class="text-center gold-steez">STEEZ UP</h1>
+          </div>
+
+          <div id="contact">
+            <label for="name" class="form-label">name:</label>
+            <input type="name" class="form-control" id="email" placeholder="name" name="name">
+          </div>
+
+          <div class="">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+
+          <div class="col-4 ">
+            <label for="phone" class="form-label">phone:</label>
+            <input type="phone" class="form-control" id="phone" placeholder="phone" name="phone">
+            <label for="ext" class="form-label">ext:</label>
+            <input type="ext" class="form-control" id="ext" placeholder="ext" name="ext">
+          </div>
+
+
+          <div class="">
+            <label for="message" class="form-label">message:</label>
+            <input type="message" class="form-control" id="email" placeholder="message" name="message">
+          </div>
+
+          <div class="form-check mb-3 mt-2">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> by checking this box i agree to the terms
+              of the steez
+            </label>
+          </div>
+
+          <div class="">
+            <button class="submit-btn" type="submit" class="btn border-success">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7 d-none d-md-block d-flex mt-5">
+        <h1 class="text-center learn-steez fw-bold p-2 da-font">Learn the steez </h1>
+        <h5 class="text-start learn-steez fw-bold da-font"> the mindset and the grindset in the steez.. Bernard was a
+          lonely fella before he mastered the steez. he learned the steez from playing the piano at steez keys. He
+          started off playing marry had a little lamp and overtime he started playing beethoven.. The steez caught up to
+          him. He mastered the steez
+        </h5>
+      </div>
+
+      <div class="col-md-5 d-none d-md-block d-flex da-font">
+        <button class="click-btn" onclick="play()">CLICK ME!</button>
+        <audio id="audio" src="steezy piano.mp3">
+        </audio>
+      </div>
+
+    </section>
+    <!-- SECTION progress bars -->
+    <section class="row container-color color-4 p-5 d-flex">
+      <div class="col-md-3 center-words order-2 order-md-1 ">
+        <div class=" p-2 da-font">
+          <h3>Pianos are super dope you are going to love these keys</h3>
+          <p>here at steez we keep it steezy, low level steamy, piano playing that creamy. you know what we be, you know
+            who we be, we be da steez
+
+            .</p>
+
+        </div>
+      </div>
+      <div class="col-md-9 spill order-1 order-md-2">
+
+        <div class="row">
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class=" text-light icon-size mdi mdi-music bg-dark"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class="icon-size mdi text-light mdi-walk bg-dark"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class="mdi icon-size text-light mdi-radioactive bg-dark"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class="icon-size mdi mdi-qrcode-plus bg-dark text-light"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class="icon-size mdi mdi-account-voice bg-dark text-light"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class="icon-size mdi mdi-data-matrix bg-dark text-light"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class="icon-size mdi mdi-semantic-web bg-dark text-light"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 bg-progress">
+            <div class="progress m-3">
+              <span> <i class="icon-size mdi mdi-close-octagon bg-dark text-light"></i></span>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- SECTION img and words -->
+
+
+    </section>
+
+    <section class="row color-3">
+
+      <div class="col-md-6 p-5 justify-content-center d-flex ">
+        <img class="img-fluid"
+          src="https://images.unsplash.com/photo-1565879629766-30adf38aac56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="">
+      </div>
+
+      <div id="ABOUT" class="col-md-4 p-5 color-4">
+        <h2 class="text-center da-font ">What b the steez</h2>
+        <p> AT the steez, you learn the fundamental arts of steezing, you learn the vaules of the art of the steez. many
+          may ask what does steez mean. Well the simple answer it's a way of life. Steez keys isnt just about learning
+          the piano. its about learning the values of steez keys. Sometimes life b hard, but if you steez, it would come
+          with ease. Like a wise man said, steez is ease </p>
+
+        <h2 class="text-center da-font">why choose steez</h2>
+        <p>the thing about steez, is that we are not like other <b>Piano lessons</b> not only do we keep it steez, but
+          we got the keys to turn you into the steez.Simple answer why not choose steezing? are you a man of not art, if
+          so your out like a fart. be prepaed to be challenged, be prepared to fail, be prepared to be <b>the steez</B>
+        </p>
+
+        <h2 class="text-center da-font">aousoudoasud</h2>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, atque placeat eligendi magnam maiores eaque
+          dolores sapiente ullam quibusdam consectetur pariatur necessitatibus laboriosam ipsa aspernatur accusamus
+          ratione commodi sit praesentium?
+          Numquam, ipsam exercitationem animi, possimus itaque fugiat, sapiente doloribus et beatae rem sint nam nobis
+          odit voluptatem dolorum voluptas tempora molestias quo libero vitae. Nemo aperiam dolore non repudiandae
+          dolorem?
+          Porro, quo est nam, dolorum sint soluta excepturi aperiam inventore, eveniet quaerat velit qui nobis molestias
+          ipsa animi delectus! Magni eum ea assumenda doloribus deserunt fuga alias, ipsam corporis. Error.
+          Eum repudiandae dolor odio? Tempora saepe dolorum aliquid nemo corporis similique recusandae dolorem placeat
+          omnis autem aliquam quaerat, debitis voluptatem voluptates tempore iusto? Possimus quis doloremque illum
+          aliquam
+          facere facilis.</p>
+      </div>
+    </section>
+
+    <!-- SECTION CARDS -->
+
+    <section class="row   d-flex justify-content-around align-items-center flex-row m-3">
+      <div class="card col-md-4 order-2 order-md-1 mt-2 rounded shadow card-color" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text da-font p-5 card-color">more
+            steeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeez.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-4 order-1 order-md-2 mt-2 rounded shadow card-color" style="width: 18rem;">
+        <img class="card-img-top p-2"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LLcWxIDS7eifzu6BL4kfQvoESanK_z6WGg&usqp=CAU"
+          alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text da-font card-color">procced to steez, please! it comes with ease. I promise, life b better
+            when your steezin</p>
+        </div>
+      </div>
+
+      <div class="card col-md-4 order-3 order-md-3 mt-2 rounded shadow card-color" style="width: 18rem;">
+        <div class="card-body ">
+          <p class="card-text da-font p-5 ">more
+            steeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeez.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION  pre footer -->
+
+
+    <section class="row color-2 py-2 text-light">
+      <div class="col-md-12  ">
+        <h2 class="text-center da-font">keep in mind steezing comes with pain, diffuiclty and most importanly steez. I
+          hope we all master the art of the steez. keep it steezy, take it easy and keep on steezin <b>CHAMP</b></h2>
+        <h4 class="ps-5 text-center">HAPPY STEEZING!!!!!
+        </h4>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    <!-- SECTION footer -->
+
+    <section
+      class="row  footer-size d-flex flex-direction-row flex-wrap-wrap align-content-strech justify-content-space-betweem align-items-flex-start color-3 p-4 ">
+      <div class="col-md-4 text-center">
+        <a class="buttons buttons text-light da-font " href="#steez">STEEZ</a>
+        </button>
+        <a href="#steez"></a>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <a class="buttons buttons text-light da-font " href="#contact">CONTACT US</a>
+        </button>
+        <a href="#contact"></a>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <a class="buttons buttons text-light da-font " href="#ABOUT">ABOUT THE STEEZ</a>
+        </button>
+        <a href="#ABOUT"></a>
+      </div>
+
+    </section>
+  </footer>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+<script src="main.js"></script>
+
+</html>
